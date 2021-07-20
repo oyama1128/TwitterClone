@@ -18,6 +18,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     //ログインチェック実行
     $user = findUserAndCheckPassword($_POST['email'], $_POST['password']);
     
+    
     if ($user) {
         // ログイン成功
         // ユーザー情報をセッションに保存
